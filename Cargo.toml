@@ -1,0 +1,21 @@
+[package]
+name = "ffmpeg-tui"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "ffmpeg_tui"
+path = "src/lib.rs"
+
+[dependencies]
+walkdir = "2.5"
+tui = "0.19"
+crossterm = "0.29"
+tokio = { version = "1.45", features = ["process", "macros", "rt-multi-thread", "sync", "io-util"] }
+regex = "1"
+anyhow = "1"
+toml = "0.8"
+serde = { version = "1", features = ["derive"] }
+
+[dev-dependencies]
+tempfile = "3"
