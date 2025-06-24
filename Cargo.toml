@@ -1,0 +1,12 @@
+[package]
+name = "ffmpeg-tui"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+walkdir = "2.5"
+tui = "0.19"
+crossterm = "0.29"
+tokio = { version = "1.45", features = ["process", "macros", "rt-multi-thread", "sync", "io-util"] }
+regex = "1"
+anyhow = "1"
